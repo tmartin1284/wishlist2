@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 export default function WishItem({ wish, onCompletedChange }) {
-  const [edad, setEdad] = useState;
+  const [edad, setEdad] = useState(50);
 
   useEffect(() => {
     let ageInterval;
