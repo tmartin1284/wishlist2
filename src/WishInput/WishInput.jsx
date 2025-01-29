@@ -5,8 +5,8 @@ import "../App/App.css";
 function WishInput({ onNewWish }) {
   const [newWish, setNewWish] = useState("");
 
-  const addwish = (e) => {
-    if ((e.type === "onClick" || e.key === "Enter") && newWish.length) {
+  const addwish = (ev) => {
+    if ((ev.type === "onClick" || ev.key === "Enter") && newWish.length) {
       const newWishObject = {
         id: Date.now(),
         text: newWish,
